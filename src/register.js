@@ -1,12 +1,18 @@
 import React from "react";
-import "./register.css"
+import './register.css';
 
 const RegisterForm = () => {
     return(
-        <div classname="cover">
+        <div className="card">
             <h1> Login </h1>
-            <input type="text" placeholder="email" />
+            <div className="row">
+                <label>Email</label>
+                <input type="text" placeholder="email" />
+            </div>
+            <div className="row">
+            <label>Password</label>
             <input type="password" placeholder="password" />
+            </div>
         </div>
     )
 }
