@@ -8,17 +8,17 @@ const Register = () => {
         <div className="form-comp cfb">
             <h1>Create an Account!</h1>
             <form className="sign-up-form cfb">
-                <label>
+                <label className='label-ac'>
                     Name:
                     <br/>
                 <input />
                 </label>
-                <label>
+                <label className='label-ac'>
                     Email:
                     <br/>
                 <input />
                 </label>
-                <label>
+                <label className='label-ac'>
                     Password:
                     <br/>
                 <input />
