@@ -10,7 +10,7 @@ const Location = () => {
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-5">
-                                <h2>User <b>Management</b></h2>
+                                <h2>Favorite Professionals</h2>
                             </div>
                             
                         </div>
