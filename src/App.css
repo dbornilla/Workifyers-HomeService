@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #f5f6fa;
-
+  background-image: url(./images/bck.jpg);
 }
 
 .cfb{
@@ -190,7 +190,10 @@ input {
   margin-top: 20px;
   margin-right: 10px;
 }
-
+.tempimg{
+  background-image: url(./images/bean.jpg);
+  height: 200px;
+}
 
 /* Professionals */
 .container-xl{

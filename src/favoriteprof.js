@@ -20,7 +20,7 @@ const Location = () => {
                             <tr>
                                 <th>#</th>
                                 <th>Name</th>						
-                                <th>Date Created</th>
+                                <th>Profession</th>
                                 
                                 <th>Action</th>
                             </tr>
@@ -29,59 +29,53 @@ const Location = () => {
                             <tr>
                                 <td>1</td>
                                 <td><a href="#">Michael Holz</a></td>
-                                <td>04/10/2013</td>                        
+                                <td>Electrician</td>                        
                                 
                                 <td>
                                    
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td><a href="#"> Paula Wilson</a></td>
                                 <td>
-                                <div class="ratings">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
+                                Home Cleaning
                                 </td>                       
                                 
                                 <td>
                                     
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td><a href="#"> Antonio Moreno</a></td>
-                                <td>11/05/2015</td>
+                                <td> Plumber</td>
                                                        
                                 <td>
                                     
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>                        
                             </tr>
                             <tr>
                                 <td>4</td>
                                 <td><a href="#"> Mary Saveley</a></td>
-                                <td>06/09/2016</td>
+                                <td> Home Cleaning </td>
                                 
                                 <td>
                                     
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>5</td>
                                 <td><a href="#"> Martin Sommer</a></td>
-                                <td>12/08/2017</td>                        
+                                <td> Aircon Cleaner </td>                        
                                 
                                 <td>
                                     
-                                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>
                             </tr>
                         </tbody>

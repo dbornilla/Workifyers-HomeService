@@ -19,9 +19,9 @@ const Booked = () => {
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>						
-                                <th>Date Created</th>
-                                
+                                <th>Name</th>	
+                                <th>Service</th>					
+                                <th>Date of Service</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -29,6 +29,7 @@ const Booked = () => {
                             <tr>
                                 <td>1</td>
                                 <td><a href="#">Michael Holz</a></td>
+                                <td>Electrician</td>
                                 <td>04/10/2013</td>                        
                                 
                                 <td>
@@ -39,15 +40,9 @@ const Booked = () => {
                             <tr>
                                 <td>2</td>
                                 <td><a href="#"> Paula Wilson</a></td>
-                                <td>
-                                <div class="ratings">
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star rating-color"></i>
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                </td>                       
+                                
+                                <td>Home Cleaning</td>
+                                <td>04/10/2013</td>                       
                                 
                                 <td>
                                     
@@ -57,6 +52,7 @@ const Booked = () => {
                             <tr>
                                 <td>3</td>
                                 <td><a href="#"> Antonio Moreno</a></td>
+                                <td>Plumbing</td>
                                 <td>11/05/2015</td>
                                                        
                                 <td>
@@ -67,6 +63,7 @@ const Booked = () => {
                             <tr>
                                 <td>4</td>
                                 <td><a href="#"> Mary Saveley</a></td>
+                                <td>Home Cleaning</td>
                                 <td>06/09/2016</td>
                                 
                                 <td>
@@ -77,6 +74,7 @@ const Booked = () => {
                             <tr>
                                 <td>5</td>
                                 <td><a href="#"> Martin Sommer</a></td>
+                                <td>Aircon Cleaning</td>
                                 <td>12/08/2017</td>                        
                                 
                                 <td>

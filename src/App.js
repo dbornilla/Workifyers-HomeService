@@ -9,7 +9,7 @@ import Booked from './bookhistory.js';
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Booked />
     </div>
   );
 }

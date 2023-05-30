@@ -1,5 +1,5 @@
 import React from 'react';
-import bean from "./img/bean.jpg";
+
 import './App.css';
 
 const Account = () => {
@@ -12,14 +12,14 @@ const Account = () => {
                                 <div className="account-settings">
                                     <div className="user-profile">
                                         <div className="user-avatar">
-                                            <p>temp</p>
+                                            <div className='tempimg'>tt</div>
                                         </div>
-                                        <h5 className="user-name">Yuki Hayashi</h5>
-                                        <h6 className="user-email">yuki@Maxwell.com</h6>
+                                        <h5 className="user-name">Mr. Bean</h5>
+                                        <h6 className="user-email">bean@comedy.com</h6>
                                     </div>
                                     <div className="about">
                                         <h5>About</h5>
-                                        <p>I'm Yuki. Full Stack Designer I enjoy creating user-centric, delightful and human experiences.</p>
+                                        <p>I'm Bean, Mr. Bean I am a british comedian actor.</p>
                                     </div>
                             </div>
                         </div>
@@ -52,8 +52,12 @@ const Account = () => {
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                                     <div className="form-group">
-                                        <label for="website">Website URL</label>
-                                        <input type="url" className="form-control" id="website" placeholder="Website url"></input>
+                                        <label for="website">Password</label>
+                                        <input type="url" className="form-control" id="website" ></input>
+                                    </div>
+                                    <div className="form-group">
+                                        <label for="website">Confirm Password</label>
+                                        <input type="url" className="form-control" id="website" ></input>
                                     </div>
                                 </div>
                             </div>
