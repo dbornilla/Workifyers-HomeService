@@ -1,0 +1,216 @@
+/* For Colors and Styling */
+:root {
+    --PrimaryColor: hsl(265, 46%, 53%);
+    --SecondaryColor: hsl(265, 61%, 73%);
+    --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+}
+
+.about {
+    width: 90%;
+    position: relative;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 5rem;
+
+    .aboutImage {
+        position: relative;
+        height: 100%;
+        width: 80%;
+        margin-top: 15%;
+        margin-left: -80%;
+
+        img {
+            height: 80%;   
+        }
+    }
+
+    .secContent {
+        position: relative;
+        justify-content: center;
+        margin-right: -60%;
+        width: 50%;
+
+
+        .aboutHeading {
+            margin-bottom: 1rem;
+            
+
+            .aboutTitle {
+                font-size: 32px;
+                font-weight: 900;
+                color: var(--textColor);
+                position: relative;
+                width: max-content;
+                z-index: 2;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    background: var(--SecondaryColor);
+                    height: 5px;
+                    width: 182px;
+                    right: 0px;
+                    bottom: 0px;
+                    z-index: -1;
+                }
+            }
+        }
+
+        .aboutDescription {
+            width: 90%;
+            height: fit-content;
+            text-align: justify;
+            padding: 2rem 0;
+            // padding-right: 2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1240px) {
+
+    .about {
+        width: 85%;
+
+        .secContent {
+            .aboutHeading {
+                .aboutTitle {
+                    font-size: 28px;
+                    &::after {
+                        width: 160px;
+                    }
+                }
+            }
+
+            .aboutDescription {
+                .aboutDesc {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .about {
+        width: 85%;
+        gap: 3rem;
+        
+
+
+        .secContent {
+            .aboutHeading {
+                margin-bottom: -1rem;
+                .aboutTitle {
+                    font-size: 24px;
+                    &::after {
+                        width: 135px;
+                    }
+                }
+            }
+
+            .aboutDescription {
+                .aboutDesc {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .about {
+        width: 85%;
+        gap: 3rem;
+        flex-direction: column;
+
+        .aboutImage {
+            position: relative;
+            height: 100%;
+            width: 80%;
+            margin-top: 15%;
+            margin-left: 0%;
+    
+            img {
+                height: 80%;   
+            }
+        }
+
+        .secContent {
+            margin-left: -45%;
+            .aboutHeading {
+                margin-bottom: -1rem;
+                .aboutTitle {
+                    font-size: 22px;
+                    &::after {
+                        width: 135px;
+                    }
+                }
+            }
+
+            .aboutDescription {
+                width: 170%;
+                margin-left: -50%;
+                .aboutDesc {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+
+    .about {
+        width: 85%;
+        gap: 3rem;
+        flex-direction: column;
+
+        .aboutImage {
+            position: relative;
+            height: 100%;
+            width: 80%;
+            margin-top: 15%;
+            margin-left: 0%;
+    
+            img {
+                height: 80%;   
+            }
+        }
+
+        .secContent {
+            margin-left: -45%;
+            .aboutHeading {
+                margin-bottom: -1rem;
+                margin-left: -1.5rem;
+                .aboutTitle {
+                    font-size: 22px;
+                    &::after {
+                        width: 125px;
+                    }
+                }
+            }
+
+            .aboutDescription {
+                width: 170%;
+                margin-left: -50%;
+                .aboutDesc {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}

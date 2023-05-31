@@ -1,0 +1,178 @@
+/* For Colors and Styling */
+:root {
+  --PrimaryColor: hsl(265, 46%, 53%);
+  --SecondaryColor: hsl(265, 61%, 73%);
+  --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+.about {
+  width: 90%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 5rem;
+}
+.about .aboutImage {
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin-top: 15%;
+  margin-left: -80%;
+}
+.about .aboutImage img {
+  height: 80%;
+}
+.about .secContent {
+  position: relative;
+  justify-content: center;
+  margin-right: -60%;
+  width: 50%;
+}
+.about .secContent .aboutHeading {
+  margin-bottom: 1rem;
+}
+.about .secContent .aboutHeading .aboutTitle {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--textColor);
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 2;
+}
+.about .secContent .aboutHeading .aboutTitle::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 182px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+.about .secContent .aboutDescription {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: justify;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 1240px) {
+  .about {
+    width: 85%;
+  }
+  .about .secContent .aboutHeading .aboutTitle {
+    font-size: 28px;
+  }
+  .about .secContent .aboutHeading .aboutTitle::after {
+    width: 160px;
+  }
+  .about .secContent .aboutDescription .aboutDesc {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 940px) {
+  .about {
+    width: 85%;
+    gap: 3rem;
+  }
+  .about .secContent .aboutHeading {
+    margin-bottom: -1rem;
+  }
+  .about .secContent .aboutHeading .aboutTitle {
+    font-size: 24px;
+  }
+  .about .secContent .aboutHeading .aboutTitle::after {
+    width: 135px;
+  }
+  .about .secContent .aboutDescription .aboutDesc {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .about {
+    width: 85%;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .about .aboutImage {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+  .about .aboutImage img {
+    height: 80%;
+  }
+  .about .secContent {
+    margin-left: -45%;
+  }
+  .about .secContent .aboutHeading {
+    margin-bottom: -1rem;
+  }
+  .about .secContent .aboutHeading .aboutTitle {
+    font-size: 22px;
+  }
+  .about .secContent .aboutHeading .aboutTitle::after {
+    width: 135px;
+  }
+  .about .secContent .aboutDescription {
+    width: 170%;
+    margin-left: -50%;
+  }
+  .about .secContent .aboutDescription .aboutDesc {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .about {
+    width: 85%;
+    gap: 3rem;
+    flex-direction: column;
+  }
+  .about .aboutImage {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+  .about .aboutImage img {
+    height: 80%;
+  }
+  .about .secContent {
+    margin-left: -45%;
+  }
+  .about .secContent .aboutHeading {
+    margin-bottom: -1rem;
+    margin-left: -1.5rem;
+  }
+  .about .secContent .aboutHeading .aboutTitle {
+    font-size: 22px;
+  }
+  .about .secContent .aboutHeading .aboutTitle::after {
+    width: 125px;
+  }
+  .about .secContent .aboutDescription {
+    width: 170%;
+    margin-left: -50%;
+  }
+  .about .secContent .aboutDescription .aboutDesc {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=about.css.map */
