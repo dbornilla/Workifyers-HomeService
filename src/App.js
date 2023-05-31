@@ -9,7 +9,7 @@ import Booked from './ProfileManagement/bookhistory.js';
 function App() {
   return (
     <div className="App">
-      <Favorite />
+      <Form />
     </div>
   );
 }
