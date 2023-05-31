@@ -18,9 +18,9 @@
 /* Container Styling */
 .Container{
   position: relative; 
-
+  margin-top: 60px;
   width: 50%;
-  height: 60%;
+  height: 75%;
 
   box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
   
@@ -43,10 +43,10 @@
 
   flex-direction: column;
 
-  background-color: #035E7B;
+  background-color: blueviolet;
   opacity: 1;
 
-  color: #EEFCF8;
+  color: black;
   text-align: center;
 
   transition: 2s;
@@ -68,7 +68,7 @@
   opacity: 1;
 
   font-weight: bold;
-  color: #035E7B;
+  color: black;
 
   transition: 2s;
 }
@@ -131,7 +131,9 @@ input {
 }
 
 /* Account Management */
-
+.container-acc{
+  margin-top: 60px;
+}
 .account-settings .user-profile {
   margin: 0 0 1rem 0;
   padding-bottom: 1rem;
@@ -197,7 +199,7 @@ input {
 
 /* Professionals */
 .container-xl{
-  margin-top: 45px;
+  margin-top: 75px;
 }
 .table-responsive {
   margin: 30px 0;

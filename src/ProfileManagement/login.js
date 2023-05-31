@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './App.css';
+import './profileStyle.css';
 
 const LogIn = () =>{
     return(
@@ -18,7 +18,7 @@ const LogIn = () =>{
                 <input />
                 </label>
                     <br/>
-                <button>
+                <button className='btn btn-primary'>
                     Sign In!
                 </button>
             </form>

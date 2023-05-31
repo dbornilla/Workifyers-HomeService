@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './App.css';
+import './profileStyle.css';
 
-const Booked = () => {
+const Location = () => {
     return (
         <div class="container-xl">
             <div class="table-responsive">
@@ -10,7 +10,7 @@ const Booked = () => {
                     <div class="table-title">
                         <div class="row">
                             <div class="col-sm-5">
-                                <h2>Bookings</h2>
+                                <h2>Favorite Professionals</h2>
                             </div>
                             
                         </div>
@@ -19,9 +19,9 @@ const Booked = () => {
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Name</th>	
-                                <th>Service</th>					
-                                <th>Date of Service</th>
+                                <th>Name</th>						
+                                <th>Profession</th>
+                                
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -29,8 +29,7 @@ const Booked = () => {
                             <tr>
                                 <td>1</td>
                                 <td><a href="#">Michael Holz</a></td>
-                                <td>Electrician</td>
-                                <td>04/10/2013</td>                        
+                                <td>Electrician</td>                        
                                 
                                 <td>
                                    
@@ -40,9 +39,9 @@ const Booked = () => {
                             <tr>
                                 <td>2</td>
                                 <td><a href="#"> Paula Wilson</a></td>
-                                
-                                <td>Home Cleaning</td>
-                                <td>04/10/2013</td>                       
+                                <td>
+                                Home Cleaning
+                                </td>                       
                                 
                                 <td>
                                     
@@ -52,8 +51,7 @@ const Booked = () => {
                             <tr>
                                 <td>3</td>
                                 <td><a href="#"> Antonio Moreno</a></td>
-                                <td>Plumbing</td>
-                                <td>11/05/2015</td>
+                                <td> Plumber</td>
                                                        
                                 <td>
                                     
@@ -63,8 +61,7 @@ const Booked = () => {
                             <tr>
                                 <td>4</td>
                                 <td><a href="#"> Mary Saveley</a></td>
-                                <td>Home Cleaning</td>
-                                <td>06/09/2016</td>
+                                <td> Home Cleaning </td>
                                 
                                 <td>
                                     
@@ -74,12 +71,11 @@ const Booked = () => {
                             <tr>
                                 <td>5</td>
                                 <td><a href="#"> Martin Sommer</a></td>
-                                <td>Aircon Cleaning</td>
-                                <td>12/08/2017</td>                        
+                                <td> Aircon Cleaner </td>                        
                                 
                                 <td>
                                     
-                                <button type="button" class="btn-close" aria-label="Close"></button>
+                                    <button type="button" class="btn-close" aria-label="Close"></button>
                                 </td>
                             </tr>
                         </tbody>
@@ -101,4 +97,5 @@ const Booked = () => {
         </div>   
     );
 }
-export default Booked;
+
+export default Location;
