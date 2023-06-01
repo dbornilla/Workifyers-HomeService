@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './App.css';
+import './profileStyle.css';
 
 const Register = () => {
 
     return(
         <div className="form-comp cfb">
-            <h1>Create an Account!</h1>
+            <h1>Create an Account</h1>
             <form className="sign-up-form cfb">
                 <label className='label-ac'>
                     Name:
@@ -24,7 +24,7 @@ const Register = () => {
                 <input />
                 </label>
                     <br/>
-                <button>
+                <button className='btn btn-primary'>
                     Sign Up!
                 </button>
             </form>

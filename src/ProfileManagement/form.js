@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-import './App.css';
+import './profileStyle.css';
 import Register from './register.js';
 import Login from './login.js';
 
@@ -26,10 +26,10 @@ const Form = () => {
             <div className={setBannerClass()}> 
 
                 {welcome ? 
-                <h2>Hello, New Friend!</h2>
+                <h2>Hello, New Workifyer</h2>
                     : <h2>Welcome Back</h2>}
 
-                <button onClick={()=> setWelcome(!welcome)}>
+                <button onClick={()=> setWelcome(!welcome)} className='btn btn-primary'>
                 {welcome ?
                     "Sign In"
                     : "Create Account"}
