@@ -13,12 +13,6 @@ import Footer from './Components/Footer/Footer';
 import Experience from './Components/Experience/Experience';
 
 
-import Form from './form.js';
-import Account from './account.js';
-import Favorite from './favoriteprof.js';
-import Booked from './bookhistory.js';
-
-
 function App() {
   return (
     <div className="App">
@@ -29,7 +23,7 @@ function App() {
       <Testimonies/>
       <Experience/>
       <Footer/>
-      <Booked />
+      
     </div>
   );
 }
