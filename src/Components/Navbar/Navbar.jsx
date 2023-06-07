@@ -3,6 +3,8 @@ import './navbar.css'
 import {GrUserWorker} from 'react-icons/gr'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
+import icon from '../../images/bean.jpg'
+import Account from '../ProfileManagement/account'
 
 const Navbar = () => {
 
@@ -16,6 +18,13 @@ const Navbar = () => {
     // Pang close ng navbar
     const removeNavbar = () => {
         setActive('navBar')
+    }
+
+    // For toggle of profile menu
+    const subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
     }
 
     return (
@@ -54,6 +63,27 @@ const Navbar = () => {
                         <button className="btn">
                             <a href="#" className="navLink">Book Now</a>
                         </button>
+
+                    
+                        <img src={icon} className='profile-icon' onClick={toggleMenu}></img>
+                        <div className='sub-wrap' id='subMenu'>
+                            <div className='sub-menu'>
+                                <div className='profile-info'>
+                                    <h3> Mr. Bean </h3>
+                                </div>
+                                <hr></hr>
+                                <a href='#container-acc' className='sub-link'>
+                                    <p>Account Management</p>
+                                </a>
+                                <a href='' className='sub-link'>
+                                    <p>Book History</p>
+                                </a>
+                                <a href='' className='sub-link'>
+                                    <p>Favorite Professionals</p>
+                                </a>
+                            </div>
+                        </div>
+
                     </ul>
 
                     <div onClick={removeNavbar} className="closeNavbar">
