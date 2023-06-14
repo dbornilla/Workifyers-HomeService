@@ -4,7 +4,10 @@ import {GrUserWorker} from 'react-icons/gr'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 import icon from '../../images/bean.jpg'
-import Account from '../ProfileManagement/account'
+import { Link } from 'react-router-dom'
+
+
+
 
 const Navbar = () => {
 
@@ -66,21 +69,25 @@ const Navbar = () => {
 
                     
                         <img src={icon} className='profile-icon' onClick={toggleMenu}></img>
-                        <div className='sub-wrap' id='subMenu'>
+                        <div className='sub-wrap open-menu' id='subMenu'>
                             <div className='sub-menu'>
+                                
+                                    
+                                
                                 <div className='profile-info'>
                                     <h3> Mr. Bean </h3>
                                 </div>
                                 <hr></hr>
-                                <a href='#container-acc' className='sub-link'>
+                                
+                                <Link to="/account" className='sub-link'>
                                     <p>Account Management</p>
-                                </a>
-                                <a href='' className='sub-link'>
+                                </Link>
+                                <Link to="/book" className='sub-link'>
                                     <p>Book History</p>
-                                </a>
-                                <a href='' className='sub-link'>
+                                </Link>
+                                <Link to="location" className='sub-link'>
                                     <p>Favorite Professionals</p>
-                                </a>
+                                </Link>
                             </div>
                         </div>
 
