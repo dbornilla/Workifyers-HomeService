@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* For Colors and Styling */
+:root {
+  --PrimaryColor: hsl(265, 46%, 53%);
+  --SecondaryColor: hsl(265, 61%, 73%);
+  --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 246);
+  --cardBG: rgb(225, 225, 235);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.electricaldetails {
+  padding-top: 5rem;
+}
+.electricaldetails .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  width: 20%;
+}
+.electricaldetails .banner {
+  width: 100vw;
+  height: 40vh;
+}
+.electricaldetails .heading {
+  padding-top: 4rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.electricaldetails .heading .detailsTitle {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.electricaldetails .heading .detailsTitle::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 155px;
+  left: 78px;
+  bottom: 335px;
+  z-index: -1;
+}
+.electricaldetails .heading .detailsDesc {
+  padding-top: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+  text-indent: 5%;
+}
+.electricaldetails .process {
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.electricaldetails .process .processTitle {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.electricaldetails .process .processTitle::after {
+  position: absolute;
+  content: "";
+  background: var(--SecondaryColor);
+  height: 5px;
+  width: 170px;
+  left: 660px;
+  bottom: 70px;
+  z-index: -1;
+}
+.electricaldetails .process .processDesc {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-size: 0.9rem;
+  text-align: justify;
+  text-indent: 5%;
+}
+.electricaldetails .processNums {
+  padding-top: 3rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.electricaldetails .processNums .processblock {
+  display: flex;
+  gap: 3rem;
+}
+.electricaldetails .processNums .processblock .processImg {
+  width: 50%;
+  height: 50%;
+}
+.electricaldetails .processNums .processblock .process1 {
+  margin: 3rem 2rem;
+}
+.electricaldetails .processNums .processblock .process1 .process1Num {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.electricaldetails .processNums .processblock .process1 .process1Title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.electricaldetails .processNums .processblock .process1 .process1Desc {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.6rem 1.5rem;
+  background: var(--gradientColor);
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.btn:hover {
+  background: var(--SecondaryColor);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+}
+
+body {
+  background: var(--bodyColor);
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body {
+    zoom: 1.7;
+  }
+}/*# sourceMappingURL=electrical.css.map */
