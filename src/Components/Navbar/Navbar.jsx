@@ -35,9 +35,9 @@ const Navbar = () => {
             <header className="header flex">
 
                 <div className="logoDiv">
-                    <a href="#" className="logo flex">
+                    <Link to="/" className="logo flex">
                         <h1> <GrUserWorker className="icon"/>Workifyers</h1>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className={active}>

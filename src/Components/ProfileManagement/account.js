@@ -5,9 +5,9 @@ import './profileStyle.css';
 const Account = () => {
     return(
         <div className="container-acc">
-            <div className="row gutters">
-                    <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-                        <div className="card h-100">
+            <div className="row gutters ">
+                    <div className="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12 ">
+                        <div className="card h-75">
                             <div className="card-body">
                                 <div className="account-settings">
                                     <div className="user-profile">
@@ -16,20 +16,21 @@ const Account = () => {
                                         </div>
                                         <h5 className="user-name">Mr. Bean</h5>
                                         <h6 className="user-email">bean@comedy.com</h6>
+                                        <p> Phone Number </p>
+                                        <p> Address </p>
                                     </div>
                                     <div className="about">
-                                        <h5>About</h5>
-                                        <p>I'm Bean, Mr. Bean I am a british comedian actor.</p>
+                                        
                                     </div>
                             </div>
                         </div>
                     </div>
                 </div>
             <div className="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-                <div className="card h-100">
+                <div className="card h-75">
                     <div className="card-body">
-                            <div className="row gutters">
-                                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div className="row gutters ">
+                                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                     <h6 className="mb-2 text-primary">Personal Details</h6>
                                 </div>
                                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
