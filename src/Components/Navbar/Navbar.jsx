@@ -24,16 +24,15 @@ const Navbar = () => {
     }
 
     // For toggle of profile menu
-    const subMenu = document.getElementById("subMenu");
 
-    function toggleMenu(){
-        subMenu.classList.toggle("open-menu");
-    }
+    const [show,setShow]=useState(false)
+
+    
 
     return (
         <section className='navBarSection'>
             <header className="header flex">
-
+                
                 <div className="logoDiv">
                     <Link to="/" className="logo flex">
                         <h1> <GrUserWorker className="icon"/>Workifyers</h1>
@@ -68,28 +67,29 @@ const Navbar = () => {
                         </button>
 
                     
-                        <img src={icon} className='profile-icon' onClick={toggleMenu}></img>
-                        <div className='sub-wrap open-menu' id='subMenu'>
-                            <div className='sub-menu'>
-                                
-                                    
-                                
-                                <div className='profile-info'>
-                                    <h3> Mr. Bean </h3>
-                                </div>
-                                <hr></hr>
-                                
-                                <Link to="/account" className='sub-link'>
-                                    <p>Account Management</p>
-                                </Link>
-                                <Link to="/book" className='sub-link'>
-                                    <p>Book History</p>
-                                </Link>
-                                <Link to="location" className='sub-link'>
-                                    <p>Favorite Professionals</p>
-                                </Link>
-                            </div>
-                        </div>
+                        <img src={icon} className='profile-icon' onClick={()=>setShow(!show)}></img>
+                        {
+                            show? <div className='sub-wrap open-menu' id='subMenu'>
+                                    <div className='sub-menu'>
+                                        <div className='profile-info'>
+                                            <h3> Mr. Bean </h3>
+                                        </div>
+                                        <hr></hr>
+                                        
+                                        <Link to="/account" className='sub-link'>
+                                            <p>Account Management</p>
+                                        </Link>
+                                        <Link to="/book" className='sub-link'>
+                                            <p>Book History</p>
+                                        </Link>
+                                        <Link to="location" className='sub-link'>
+                                            <p>Favorite Professionals</p>
+                                        </Link>
+                                    </div>
+                                </div>: null
+                        }
+                        
+                        
 
                     </ul>
 
