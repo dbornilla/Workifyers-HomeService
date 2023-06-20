@@ -34,7 +34,7 @@ const Navbar = () => {
             <header className="header flex">
                 
                 <div className="logoDiv">
-                    <Link to="/" className="logo flex">
+                    <Link to="/" className="logo flex" reloadDocument>
                         <h1> <GrUserWorker className="icon"/>Workifyers</h1>
                     </Link>
                 </div>
@@ -76,13 +76,13 @@ const Navbar = () => {
                                         </div>
                                         <hr></hr>
                                         
-                                        <Link to="/account" className='sub-link'>
+                                        <Link to="/account" className='sub-link' reloadDocument>
                                             <p>Account Management</p>
                                         </Link>
-                                        <Link to="/book" className='sub-link'>
+                                        <Link to="/book" className='sub-link' reloadDocument>
                                             <p>Book History</p>
                                         </Link>
-                                        <Link to="location" className='sub-link'>
+                                        <Link to="location" className='sub-link' reloadDocument>
                                             <p>Favorite Professionals</p>
                                         </Link>
                                     </div>
