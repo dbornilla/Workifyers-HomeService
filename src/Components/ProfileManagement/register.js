@@ -7,7 +7,7 @@ const Register = () => {
     return(
         <div className="form-comp cfb">
             <h1>Create an Account</h1>
-            <form className="sign-up-form cfb">
+            <form className="sign-up-form cfb-Form">
                 <label className='label-ac'>
                     Name:
                     <br/>

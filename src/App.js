@@ -15,12 +15,18 @@ import Account from './Components/ProfileManagement/account';
 import Booked from './Components/ProfileManagement/bookhistory';
 import Location from './Components/ProfileManagement/favoriteprof';
 import Pages from './Components/Pages/pages';
+import Form from './Components/ProfileManagement/form';
 
 function App() {
   return (
     
       <div className="App">
-
+        <Form />
+        
+        {
+        
+        
+          /*
         
         <Navbar/>
         
@@ -34,8 +40,8 @@ function App() {
 
         
         <Footer/>
-        
-
+        */
+        }
         
       </div>
     

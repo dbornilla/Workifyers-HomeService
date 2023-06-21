@@ -4,7 +4,7 @@ import './profileStyle.css';
 
 const LogIn = () =>{
     return(
-        <div className="form-comp cfb">
+        <div className="form-comp cfb-Form">
             <h1>Sign In!</h1>
             <form className="sign-up-form cfb">
                 <label>
