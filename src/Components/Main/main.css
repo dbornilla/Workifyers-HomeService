@@ -36,9 +36,9 @@
   content: "";
   background: var(--SecondaryColor);
   height: 5px;
-  width: 82px;
+  width: 72px;
   right: 0;
-  bottom: 5px;
+  bottom: 0px;
   z-index: -1;
 }
 .mainn .secContent {
@@ -145,7 +145,7 @@
     font-size: 1.5rem;
   }
   .title::after {
-    width: 107px !important;
+    width: 100px !important;
   }
   .secContent {
     grid-template-columns: repeat(2, 1fr);
