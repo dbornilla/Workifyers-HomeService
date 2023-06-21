@@ -4,8 +4,8 @@
   --SecondaryColor: hsl(265, 61%, 73%);
   --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
   --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(201, 33%, 16%);
-  --textColor: hsl(240, 4%, 36%);
+  --whiteColorDeam: hsl(201, 33%, 16%);
+  --whiteColor: hsl(240, 4%, 36%);
   --whiteColorDeam: hsl(0, 0%, 93%);
   --greyText: rgb(190, 190, 190);
   --inputColor: rgb(239, 239, 239);
@@ -111,12 +111,13 @@
   padding: 1rem 1rem 4rem;
   gap: 2rem;
   border-radius: 1rem;
-  background: var(--bodyColor);
+  background: transparent;
   width: 100%;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
   overflow: hidden;
+  border: 1px solid white;
 }
 .footer .secContent .footerCard .footerIntro {
   justify-content: center;
@@ -125,24 +126,27 @@
   row-gap: 0.5rem;
 }
 .footer .secContent .footerCard .logoDiv .logo {
-  color: var(--blackColor);
+  color: var(--whiteColor);
   font-weight: 600;
 }
 .footer .secContent .footerCard .logoDiv .logo .icon {
   font-size: 25px;
-  color: var(--PrimaryColor);
+  color: var(--whiteColor);
   margin-right: 10px;
+}
+.footer .secContent .footerCard .logoDiv .logo .white-icon path {
+  stroke: var(--whiteColorDeam); /* Change the fill color to white */
 }
 .footer .secContent .footerCard .footerParagraph {
   font-size: 13px;
-  color: var(--textColor);
+  color: var(--whiteColor);
 }
 .footer .secContent .footerCard .footerSocials {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
 }
 .footer .secContent .footerCard .footerSocials .icon {
-  color: var(--blackColor);
+  color: var(--whiteColorDeam);
   font-size: 20px;
 }
 .footer .secContent .footerCard .footerSocials .icon:hover {
@@ -155,17 +159,17 @@
 .footer .secContent .footerCard .footerLinks .linkGroup .groupTitle {
   display: flex;
   font-weight: 600;
-  color: var(--blackColor);
+  color: var(--whiteColor);
   margin-bottom: 0.5rem;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
   font-size: 0.6rem;
-  color: var(--textColor);
+  color: var(--whiteColor);
   transition: 0.3s ease-in-out;
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .footerList .icon {
   font-size: 15px;
-  color: var(--greyText);
+  color: var(--whiteColorDeam);
 }
 .footer .secContent .footerCard .footerLinks .linkGroup .bold {
   font-weight: 600;
@@ -178,7 +182,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: var(--PrimaryColor);
+  background: transparent;
+  border: 1px solid white;
   padding: 0.5rem 2rem;
 }
 .footer .secContent .footerCard .footerDiv small {
@@ -193,7 +198,7 @@
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
     font-size: 0.7rem;
-    color: var(--blackColor);
+    color: var(--whiteColorDeam);
     padding: 5px 0;
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .bold {
@@ -231,7 +236,7 @@
   }
   .footer .footerCard .footerLinks .linkGroup .footerList {
     font-size: 0.8rem;
-    color: var(--blackColor);
+    color: var(--whiteColorDeam);
     padding: 5px 0;
   }
   .footer .footerCard .footerLinks .linkGroup .bold {
@@ -248,7 +253,7 @@
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
     font-size: 1rem;
-    color: var(--blackColor);
+    color: var(--whiteColorDeam);
     padding: 5px 0;
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .bold {
@@ -266,14 +271,14 @@
   }
   .footer .secContent .footerCard .footerIntro .footerParagraph {
     font-size: 15px;
-    color: var(--textColor);
+    color: var(--whiteColor);
   }
   .footer .secContent .footerCard .footerIntro .footerSocials {
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
   }
   .footer .secContent .footerCard .footerIntro .footerSocials .icon {
-    color: var(--textColor);
+    color: var(--whiteColor);
     font-size: 25px;
   }
   .footer .secContent .footerCard .footerIntro .footerSocials .icon:hover {
@@ -281,7 +286,7 @@
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .footerList {
     font-size: 1rem;
-    color: var(--blackColor);
+    color: var(--whiteColorDeam);
     padding: 5px 0;
   }
   .footer .secContent .footerCard .footerLinks .linkGroup .bold {

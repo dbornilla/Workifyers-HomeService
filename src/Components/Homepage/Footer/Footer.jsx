@@ -50,7 +50,7 @@ const Footer = () => {
                     <div className="footerIntro flex">
                         <div className="logoDiv">
                             <a href="#" className='logo flex'>
-                            <GrUserWorker className="icon"/> Workifyers
+                            <GrUserWorker style={{ color: 'white' }} className="icon white-icon"/> Workifyers
                             </a>
                         </div>
 
