@@ -25,7 +25,8 @@ const About = () => {
                 </div>
 
                 <div className="aboutDescription">
-                    <p className="aboutDesc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ducimus minima voluptatibus odio sed. Aliquid inventore maiores nihil laboriosam voluptas facilis velit at magnam modi, dolorum perspiciatis amet tenetur officiis vitae, laudantium nobis delectus ratione. Iure molestiae placeat maiores! Est ducimus ipsum iure! Rerum nemo porro vero adipisci molestias maxime! Sapiente similique, aspernatur eligendi assumenda, voluptates error repudiandae veritatis fugiat, modi maxime cupiditate placeat dolore quidem doloremque blanditiis consequatur accusantium odit nemo nam. Amet at autem velit accusamus repellat provident, doloribus et dolorum, culpa blanditiis quae commodi animi consequuntur laboriosam eius, suscipit nulla illum? Iure cumque atque dolore dicta libero.</p>
+                    <p className="aboutDesc">At Workifyiers, we understand the challenges and time constraints that come with maintaining a home and ensuring all your household needs are met. That's why we've developed a cutting-edge home service application that connects you with skilled professionals in various fields, making your life easier and more convenient.</p>
+                    <p className="aboutDesc">Whether you need assistance with plumbing, electrical work, cleaning, or any other home service, Workifyiers is here to help. Our platform brings together a network of verified and highly experienced service providers, ensuring top-quality workmanship and reliable solutions for your home. </p>
                 </div>
                 
             </div>
