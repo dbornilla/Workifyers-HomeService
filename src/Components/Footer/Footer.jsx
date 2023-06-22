@@ -11,6 +11,8 @@ import {FaInstagram} from 'react-icons/fa'
 
 import {FiChevronRight} from 'react-icons/fi'
 
+import Logo from '../../Assets/images/logo2.png'
+
 import Aos, { init } from "aos"
 import 'aos/dist/aos.css'
 
@@ -50,7 +52,7 @@ const Footer = () => {
                     <div className="footerIntro flex">
                         <div className="logoDiv">
                             <a href="#" className='logo flex'>
-                            <GrUserWorker style={{ color: 'white' }} className="icon white-icon"/> Workifyers
+                            <img src={Logo} className='icon' style={{ width: '2rem', height: 'auto' }}/>Workifyers
                             </a>
                         </div>
 

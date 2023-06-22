@@ -1,8 +1,8 @@
 /* For Colors and Styling */
 :root {
-  --PrimaryColor: hsl(265, 46%, 53%);
-  --SecondaryColor: hsl(265, 61%, 73%);
-  --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+  --PrimaryColor: #030746;
+  --SecondaryColor: #1E88D8;
+  --gradientColor: linear-gradient(to right, #030746, #1E88D8 );
   --whiteColor: hsl(0, 0%, 100%);
   --whiteColorDeam: hsl(201, 33%, 16%);
   --whiteColor: hsl(240, 4%, 36%);
@@ -77,7 +77,8 @@
 }
 .footer .secContent .contactDiv .inputDiv input {
   width: 100%;
-  padding: 0.5rem 0.6rem;
+  height: 2rem;
+  padding: 0.7rem 0.8rem;
   border-radius: 3rem;
   border: 1px solid var(--whiteColor);
   outline: none;
@@ -87,14 +88,17 @@
 .footer .secContent .contactDiv .inputDiv input::-moz-placeholder {
   color: var(--whiteColor);
   opacity: 0.5;
+  font-size: 0.9rem;
 }
 .footer .secContent .contactDiv .inputDiv input:-ms-input-placeholder {
   color: var(--whiteColor);
   opacity: 0.5;
+  font-size: 0.9rem;
 }
 .footer .secContent .contactDiv .inputDiv input::placeholder {
   color: var(--whiteColor);
   opacity: 0.5;
+  font-size: 0.9rem;
 }
 .footer .secContent .contactDiv .inputDiv .btn {
   width: 100%;

@@ -1,31 +1,17 @@
 /* For Colors and Styling */
-:root {
-  --PrimaryColor: hsl(265, 46%, 53%);
-  --SecondaryColor: hsl(265, 61%, 73%);
-  --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
-  --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(201, 33%, 16%);
-  --textColor: hsl(240, 4%, 36%);
-  --whiteColorDeam: hsl(0, 0%, 93%);
-  --greyText: rgb(190, 190, 190);
-  --inputColor: rgb(239, 239, 239);
-  --bodyColor: rgb(240, 240, 246);
-  --cardBG: rgb(225, 225, 235);
-}
-
 .header {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--whiteColor);
+  background: hsl(0deg, 0%, 100%);
   width: 100%;
   padding: 1rem;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(2, 15, 29, 0.231);
 }
 .header .logo {
-  color: var(--blackColor);
+  color: hsl(201deg, 33%, 16%);
   font-weight: 600;
   cursor: pointer;
   align-items: center;
@@ -34,16 +20,20 @@
 }
 .header .logo .icon {
   font-size: 25px;
-  color: var(--PrimaryColor);
-  transform: translateY(3px);
-  padding-right: 0.5rem;
+  color: #030746;
+  transform: translateY(-3px);
+  padding-right: 1rem;
 }
 
-.img-profile{
+.brand {
+  font-size: 1.8rem;
+}
+
+.img-profile {
   height: 50px;
 }
 
-.profile-icon{
+.profile-icon {
   position: absolute;
   width: 40px;
   border-radius: 50%;
@@ -51,7 +41,7 @@
   right: 2%;
 }
 
-.sub-wrap{
+.sub-wrap {
   position: absolute;
   top: 100%;
   right: 2%;
@@ -59,27 +49,23 @@
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.5s;
-  
 }
-.sub-wrap.open-menu{
+.sub-wrap.open-menu {
   max-height: 400px;
 }
-.sub-menu{
+.sub-wrap .sub-menu {
   background-color: white;
   padding: 20px;
   margin: 10px;
 }
-
-.profile-info{
+.sub-wrap .profile-info {
   display: flex;
   text-align: center;
 }
-
-.profile-info h3{
+.sub-wrap .profile-info h3 {
   font-weight: 500;
 }
-
-.sub-menu hr{
+.sub-wrap hr {
   border: 0;
   height: 5px;
   width: 100%;
@@ -87,29 +73,24 @@
   margin-top: 15px;
   margin-bottom: 10px;
 }
-
-.sub-link{
-  display: flex;  
+.sub-wrap .sub-link {
+  display: flex;
   align-items: center;
   text-decoration: none;
   color: #525252;
   margin: 12px 0;
 }
-
-.sub-link p{
+.sub-wrap .sub-link p {
   width: 100%;
 }
-
-.sub-link:hover p{
+.sub-wrap .sub-link:hover p {
   font-weight: 600;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .header .navBar {
     position: absolute;
-    background: var(--whiteColorDeam);
+    background: hsl(0deg, 0%, 93%);
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
@@ -134,68 +115,68 @@
     padding: 0.5rem 0;
   }
   .header .navBar .navLists .navItem .navLink {
-    color: var(--textColor);
+    color: hsl(240deg, 4%, 36%);
     font-size: 0.9rem;
     font-weight: 600;
   }
   .header .navBar .navLists .navItem .navLink:hover {
-    color: var(--PrimaryColor);
+    color: #030746;
   }
   .header .navBar .navLists .btn {
     margin-top: 1rem;
   }
   .header .navBar .navLists .btn a {
     font-weight: 600;
-    color: var(--whiteColor);
+    color: hsl(0deg, 0%, 100%);
   }
   .header .navBar .closeNavbar {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    color: var(--PrimaryColor);
+    color: #030746;
   }
   .header .navBar .closeNavbar:hover {
-    color: var(--SecondaryColor);
+    color: #1E88D8;
   }
-  .header .activeNavbar {
+  .header .navBar.activeNavbar {
     top: 7rem;
   }
+  .toggleNavbar .icon {
+    font-size: 25px;
+    color: #030746;
+  }
+  .toggleNavbar:hover .icon {
+    color: #1E88D8;
+  }
 }
-.header .toggleNavbar .icon {
-  font-size: 25px;
-  color: var(--PrimaryColor);
-}
-.header .toggleNavbar:hover.icon {
-  color: var(--SecondaryColor);
-}
-
 @media screen and (min-width: 740px) {
-  .toggleNavbar, .closeNavbar {
+  .toggleNavbar,
+.closeNavbar {
     display: none;
   }
   .header {
     padding: 1.5rem 2rem;
   }
-  .header .navBar .navLists {
+  .navBar .navLists {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
   }
-  .header .navBar .navLists .navItem .navLink {
-    color: var(--textColor);
+  .navBar .navLists .navItem .navLink {
+    color: hsl(240deg, 4%, 36%);
     padding: 0 0.45rem;
     font-size: 0.9rem;
     font-weight: 500;
   }
-  .header .navBar .navLists .navItem .navLink:hover {
-    color: var(--PrimaryColor);
+  .navBar .navLists .navItem .navLink:hover {
+    color: #030746;
   }
-  .header .navBar .navLists .btn {
+  .navBar .navLists .btn {
     margin-left: 1rem;
   }
-  .header .navBar .navLists .btn a {
-    color: var(--whiteColor);
+  .navBar .navLists .btn a {
+    color: hsl(0deg, 0%, 100%);
     font-weight: 500;
   }
 }

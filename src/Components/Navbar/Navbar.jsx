@@ -5,6 +5,7 @@ import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
 import icon from '../../images/bean.jpg'
 import { Link } from 'react-router-dom'
+import Logo from '../../Assets/images/logo.png'
 
 
 
@@ -35,7 +36,7 @@ const Navbar = () => {
                 
                 <div className="logoDiv">
                     <Link to="/" className="logo flex" reloadDocument>
-                        <h1> <GrUserWorker className="icon"/>Workifyers</h1>
+                    <img src={Logo} className='icon' style={{ width: '3rem', height: 'auto' }}/><h1 className='brand'>Workifyers</h1>
                     </Link>
                 </div>
 
