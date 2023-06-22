@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import AppLogo from '../../Assets/images/WorkLogo.png'
 import './profileStyle.css';
 import Register from './register.js';
 import Login from './login.js';
@@ -24,10 +24,10 @@ const Form = () => {
         <div className="Container-Form cfb-Form">
 
             <div className={setBannerClass()}> 
-
-                {welcome ? 
-                <h2>Hello, New Workifyer</h2>
-                    : <h2>Welcome Back</h2>}
+                <div className='img-logo'>
+                    <img src={AppLogo}></img>
+                </div>
+                
 
                 <button onClick={()=> setWelcome(!welcome)} className='btn btn-primary'>
                 {welcome ?
