@@ -1,8 +1,13 @@
-import React from 'react';
-
+import React,{useState} from 'react';
+import { Modal,Button } from 'react-bootstrap';
 import './profileStyle.css';
 
+
 const Register = () => {
+
+    const [show,setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return(
         <div className="signup-form">
@@ -31,10 +36,25 @@ const Register = () => {
         </div>        
         
        
-		<div class="form-group"></div>
+		<div class="form-group">
+        <input type="checkbox" required="required"></input> <label>I accept the</label> <label className='terms' onClick={handleShow}>Terms and Conditions</label>
+        </div>
+        
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+            <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+                Close
+            </Button>
+            
+            </Modal.Footer>
+        </Modal>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            <button type="submit" class="btn btn-primary btn-lg" >Sign Up</button>
         </div>
     
             </form>
