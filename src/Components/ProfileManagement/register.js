@@ -14,11 +14,9 @@ const Register = () => {
             
             <form className="sign-up-form cfb" >
 
-            
-
             <h2>Sign Up</h2>
 		
-		<hr></hr>
+		
         <div className="form-group">
 			<div className="row">
 				<div className="col"><input type="text" className="form-control" name="first_name" placeholder="First Name" required="required"></input></div>
@@ -41,10 +39,19 @@ const Register = () => {
         </div>
         
         <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Header >
+            <Modal.Title>Terms and Condition</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+            <Modal.Body>
+            
+                Welcome to our service application website. 
+                You musy agree to be bound on our terms and conditions and our Privacy Policy.
+                If you do not accept all of these terms, then you may not use our website.
+
+                We may modify terms for any reason at any time depending on what new versions we have to our website.
+                these changes do not affect rights and obligations that arose prior to such change.
+
+            </Modal.Body>
             <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
                 Close
