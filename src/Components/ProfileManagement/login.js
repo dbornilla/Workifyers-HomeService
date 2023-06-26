@@ -4,23 +4,19 @@ import './profileStyle.css';
 
 const LogIn = () =>{
     return(
-        <div className="form-comp cfb">
-            <h1>Sign In!</h1>
-            <form className="sign-up-form cfb">
-                <label>
-                    Email:
-                    <br/>
-                <input />
-                </label>
-                <label>
-                    Password:
-                    <br/>
-                <input />
-                </label>
-                    <br/>
-                <button className='btn btn-primary'>
-                    Sign In!
-                </button>
+        <div className="login-form">
+            
+            <form >
+            <h2 className="text-center">Log in</h2>       
+                <div className="form-group">
+                    <input type="text" className="form-control" placeholder="Username" required="required"></input>
+                </div>
+                <div className="form-group">
+                    <input type="password" className="form-control" placeholder="Password" required="required"></input>
+                </div>
+                <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                </div>
             </form>
         </div>
     );

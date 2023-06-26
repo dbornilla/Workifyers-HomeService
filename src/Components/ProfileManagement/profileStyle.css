@@ -1,21 +1,21 @@
   
-  .cfb{
+  .cfb-Form{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   
   /* Container Styling */
-  .Container{
-    position: relative; 
-    margin-top: 60px;
-    width: 50%;
-    height: 75%;
-  
-    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+  .Container-Form{
     
+    height: 100vh;
+    margin: auto;
+    
+    width: 100%;
     border-radius: 0.5em;
+    
   
    
   }
@@ -24,17 +24,18 @@
   .banner-side{
     position: absolute;
     z-index: 2;
-    right: 65%;
+    right: 55%;
   
     border: 0.1em solid #592941;
     border-radius: 0.5em;
   
-    width: 35%;
-    height: 100%;
+    width: 25%;
+    height: 70%;
   
     flex-direction: column;
   
-    background-color: blueviolet;
+    background-color: white;
+    background-image: url(../../Assets/images/banner-bg.png);
     opacity: 1;
   
     color: black;
@@ -42,18 +43,22 @@
   
     transition: 2s;
   }
+  .img-logo{
+    height: 40%;
+    width: 40%;
+  }
   
   /* Form Side of Container */
   .form-side{
     position: absolute;
     z-index: 1;
-    right: 0;
+    right: 15%;
   
     border: 0.1em solid #592941;
     border-radius: 0.5em;
   
-    width: 65%;
-    height: 100%;
+    width: 40%;
+    height: 70%;
   
     background-color: #EEFCF8;
     opacity: 1;
@@ -65,11 +70,11 @@
   }
   
   .send-right{
-    right: 0;
+    right: 15%;
   }
   
   .send-left{
-    right: 35%;
+    right: 40%;
   }
   
   
@@ -79,8 +84,8 @@
   }
   
   .sign-up-form{
-    width: 50%;
-    flex-direction: column;
+    width: 100%;
+    
   }
   
   .sign-up-form > label{
@@ -93,7 +98,74 @@
   }
   
   
-  /* All Buttons Styling */
+
+  .form-control {
+    height: 41px;
+    background: #f2f2f2;
+    box-shadow: none !important;
+    border: none;
+    font-weight: normal;
+  }
+  .form-control:focus {
+    background: #e2e2e2;
+  }
+  .form-control, .btn {        
+    border-radius: 3px;
+  }
+  .signup-form {
+    width: 400px;
+    margin: 30px auto;
+  }
+  
+  .signup-form h2  {
+    color: #333;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .signup-form hr  {
+    margin: 0 -30px 20px;
+  }    
+  .signup-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .signup-form label{
+    font-weight: normal;
+  }
+  .sign-up-form .terms{
+    cursor: pointer;
+    color: blue;
+  }
+
+  
+  
+
+
+  .login-form {
+    width: 340px;
+    margin: 50px auto;
+  	font-size: 15px;
+    
+  }
+  .login-form h2 {
+    margin: 0 0 15px;
+  }
+  .form-control, .btn {
+      min-height: 38px;
+      border-radius: 2px;
+  }
+  .login-form btn {        
+      font-size: 100px;
+      font-weight: bold;
+  }
+  .login-form .form-group {
+    margin-bottom: 15px;
+    
+}
+
+
+
+  /* All Buttons Styling
   button {
     padding: 1em;
   
@@ -114,13 +186,14 @@
   button:hover{
     opacity: 0.9;
   }
-  
-  /* All Inputs Styling */
+   
+
+  /* All Inputs Styling 
   input {
     padding: 0.5em;
     border: 1px solid #035E7B;
   }
-  
+  */
 
 
   /* Account Management */
