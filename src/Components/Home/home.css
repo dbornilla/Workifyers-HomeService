@@ -1,8 +1,8 @@
 /* For Colors and Styling */
 :root {
-  --PrimaryColor: hsl(265, 46%, 53%);
-  --SecondaryColor: hsl(265, 61%, 73%);
-  --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+  --PrimaryColor: #030746;
+  --SecondaryColor: #1E88D8;
+  --gradientColor: linear-gradient(to right, #030746, #1E88D8 );
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -25,7 +25,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background: rgba(59, 54, 51, 0.6588235294);
+  background: rgba(51, 54, 59, 0.6588235294);
   top: 0;
   bottom: 0;
   z-index: 1;
@@ -175,7 +175,7 @@
     content: "";
     background: var(--SecondaryColor);
     height: 5px;
-    width: 145px;
+    width: 138px;
     right: 0;
     bottom: 5px;
     z-index: -1;

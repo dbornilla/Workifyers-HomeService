@@ -1,11 +1,11 @@
 /* For Colors and Styling */
 :root {
-    --PrimaryColor: hsl(265, 46%, 53%);
-    --SecondaryColor: hsl(265, 61%, 73%);
-    --gradientColor: linear-gradient(to right, #b3a0959a, #797BE4 );
+    --PrimaryColor: #030746;
+    --SecondaryColor: #1E88D8;
+    --gradientColor: linear-gradient(to right, #030746, #1E88D8 );
     --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(201, 33%, 16%);
+    --whiteColor: hsl(240, 4%, 36%);
     --whiteColorDeam: hsl(0, 0%, 93%);
     --greyText: rgb(190, 190, 190);
     --inputColor: rgb(239, 239, 239);
@@ -83,7 +83,8 @@
 
                 input {
                     width: 100%;
-                    padding: .5rem .6rem;
+                    height: 2rem;
+                    padding: .7rem .8rem;
                     border-radius: 3rem;
                     border: 1px solid var(--whiteColor);
                     outline: none;
@@ -93,6 +94,7 @@
                     &::placeholder {
                         color: var(--whiteColor);
                         opacity: .5;
+                        font-size: .9rem;
                     }
                 }
 
@@ -116,12 +118,13 @@
             padding: 1rem 1rem 4rem;
             gap: 2rem;
             border-radius: 1rem;
-            background: var(--bodyColor);
+            background: transparent;
             width: 100%;
             justify-content: center;
             flex-direction: column;
             align-items: flex-start;
             overflow: hidden;
+            border: 1px solid white;
 
             .footerIntro {
                 
@@ -133,22 +136,27 @@
 
             .logoDiv {
                 .logo {
-                    color: var(--blackColor);
+                    color: var(--whiteColor);
                     font-weight: 600;
 
 
                     .icon {
                         font-size: 25px;
-                        color: var(--PrimaryColor);
+                        color: var(--whiteColor);
                         margin-right: 10px;
 
                     }
+
+                    .white-icon path {
+                        stroke: var(--whiteColorDeam); /* Change the fill color to white */
+                      }
+                      
                 }
             }
 
             .footerParagraph {
                 font-size: 13px;
-                color: var(--textColor);
+                color: var(--whiteColor);
             }
 
 
@@ -156,7 +164,7 @@
                 column-gap: .5rem;
 
                 .icon {
-                    color: var(--blackColor);
+                    color: var(--whiteColorDeam);
                     font-size: 20px;
 
                     &:hover {
@@ -175,18 +183,18 @@
                     .groupTitle {
                         display: flex;
                         font-weight: 600;
-                        color: var(--blackColor);
+                        color: var(--whiteColor);
                         margin-bottom: .5rem;
                     }
 
                     .footerList {
                         font-size: .6rem;
-                        color: var(--textColor);
+                        color: var(--whiteColor);
                         transition: .3s ease-in-out;
 
                         .icon {
                             font-size: 15px;
-                            color: var(--greyText);
+                            color: var(--whiteColorDeam);
                         }
 
                         // &:hover {
@@ -214,7 +222,8 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: var(--PrimaryColor);
+                background: transparent;
+                border: 1px solid white;
                 padding: .5rem 2rem;
 
                 small {
@@ -239,7 +248,7 @@
                     .linkGroup {
                         .footerList {
                             font-size: .7rem;
-                            color: var(--blackColor);
+                            color: var(--whiteColorDeam);
                             padding: 5px 0;
                         }
 
@@ -296,7 +305,7 @@
                 .linkGroup {
                     .footerList {
                         font-size: .8rem;
-                        color: var(--blackColor);
+                        color: var(--whiteColorDeam);
                         padding: 5px 0;
                     }
 
@@ -322,7 +331,7 @@
                     .linkGroup {
                         .footerList {
                             font-size: 1rem;
-                            color: var(--blackColor);
+                            color: var(--whiteColorDeam);
                             padding: 5px 0;
                         }
 
@@ -349,14 +358,14 @@
                 .footerIntro {
                     .footerParagraph  {
                         font-size: 15px;
-                        color: var(--textColor);
+                        color: var(--whiteColor);
                     }
 
                     .footerSocials {
                         column-gap: .5rem;
 
                         .icon {
-                            color: var(--textColor);
+                            color: var(--whiteColor);
                             font-size: 25px;
 
                             &:hover {
@@ -370,7 +379,7 @@
                     .linkGroup {
                         .footerList {
                             font-size: 1rem;
-                            color: var(--blackColor);
+                            color: var(--whiteColorDeam);
                             padding: 5px 0;
                         }
 
