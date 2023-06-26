@@ -17,12 +17,7 @@ import Location from './Components/ProfileManagement/favoriteprof';
 import Pages from './Components/Pages/pages';
 import Form from './Components/ProfileManagement/form';
 
-import HouseCleaning from './Components/Main/Details/HouseCleaningDetails/HouseCleaning';
-import Plumbing from './Components/Main/Details/PlumbingDetails/Plumbing';
-import Carpentry from './Components/Main/Details/CarpentryDetails/Carpentry';
-import AirconCleaning from './Components/Main/Details/AirconCleaningDetails/AirconCleaning';
-import Electrical from './Components/Main/Details/ElectricalDetails/Electrical';
-import HousePainting from './Components/Main/Details/HousePaintingDetails/HousePainting';
+import Message from './Components/Message/message';
 
 function App() {
   return (
@@ -31,7 +26,7 @@ function App() {
         
         
         <Navbar/>
-        
+        <Message/>
         <Routes>
           <Route path='/' element={ < Pages />} />
           <Route index element={ <Pages />} />
