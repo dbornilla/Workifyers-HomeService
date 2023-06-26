@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-
+import AppLogo from '../../Assets/images/WorkLogo.png'
 import './profileStyle.css';
 import Register from './register.js';
 import Login from './login.js';
@@ -9,25 +9,25 @@ const Form = () => {
     const [welcome, setWelcome] = useState(false)
 
     const setBannerClass = () => {
-        const classArr = ["banner-side cfb"]
+        const classArr = ["banner-side cfb-Form"]
         if (welcome) classArr.push('send-right')
         return classArr.join(' ')
     }
 
     const setFormClass = () => {
-        const classArr = ["form-side cfb"] 
+        const classArr = ["form-side cfb-Form"] 
         if (welcome) classArr.push('send-left')
         return classArr.join(' ')
     }
     return(
 
-        <div className="Container cfb">
+        <div className="Container-Form cfb-Form">
 
             <div className={setBannerClass()}> 
-
-                {welcome ? 
-                <h2>Hello, New Workifyer</h2>
-                    : <h2>Welcome Back</h2>}
+                <div className='img-logo'>
+                    <img src={AppLogo}></img>
+                </div>
+                
 
                 <button onClick={()=> setWelcome(!welcome)} className='btn btn-primary'>
                 {welcome ?
