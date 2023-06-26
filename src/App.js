@@ -28,12 +28,7 @@ function App() {
   return (
     
       <div className="App">
-        <Form />
         
-        {
-        
-        
-          /*
         
         <Navbar/>
         
@@ -49,8 +44,7 @@ function App() {
 
         
         <Footer/>
-        */
-        }
+        
         
       </div>
     
