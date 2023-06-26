@@ -35,13 +35,6 @@ function App() {
           <Route path='/' element={ < Pages />} />
           <Route index element={ <Pages />} />
 
-          <Route path='/housecleaning-details' element={<HouseCleaning/>}/>
-          <Route path='/plumbing-details' element={<Plumbing/>}/>
-          <Route path='/carpentry-details' element={<Carpentry/>}/>
-          <Route path='/airconcleaning-details' element={<AirconCleaning/>}/>
-          <Route path='/electrical-details' element={<Electrical/>}/>
-          <Route path='/housepainting-details' element={<HousePainting/>}/>
-
 
           <Route path='account' element={ < Account />} />
           <Route path='book' element={ < Booked />} />
