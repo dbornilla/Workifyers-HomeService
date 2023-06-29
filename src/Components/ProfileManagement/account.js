@@ -62,7 +62,7 @@ const Account = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="row gutters">
+                            <div className="row gutters mid">
                                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <h6 className="mt-3 mb-2 text-primary">Address</h6>
                                 </div>
@@ -81,7 +81,7 @@ const Account = () => {
                                 
                             </div>
 
-                            <div className="row gutters ">
+                            <div className="row gutters bot">
                                 <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                     <div className="text-end ">
                                         <button type="button" id="submit" name="submit" className="btn btn-secondary btnm">Cancel</button>
