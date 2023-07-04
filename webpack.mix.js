@@ -1,3 +1,11 @@
+
+const mix = require('laravel-mix');
+
+mix.js('src/app.js','dist');
+mix.css('src/app.css', 'dist');
+mix.setPublicPath('dist');
+
+/*
 const { assertSupportedNodeVersion } = require('../src/Engine');
 
 module.exports = async () => {
@@ -15,3 +23,4 @@ module.exports = async () => {
 
     return mix.build();
 };
+*/
